@@ -1,0 +1,32 @@
+{
+  "name": "@hathq/delivery-client",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Exact document adoption and trusted RenderPlan application over Crowsi STATE",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "LICENSE-PREVIOUS"
+  ],
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1",
+    "@playwright/test": "1.62.1",
+    "@hathq/delivery-server": "file:../../../../../../../.artifacts/npm/6a4c339e0195038ef6857d5b04f2357c676a4eafbeb259c601d0e43b7cd75a9a/hathq-delivery-server-0.10.0.tgz",
+    "@hathq/projection-contracts": "file:../../../../../../../.artifacts/npm/cf89d5f46ee58a29c7a4d502eeee4435dbb95f33e1f48a93d6aeab5e0a22f852/hathq-projection-contracts-0.10.0.tgz"
+  },
+  "dependencies": {
+    "@hathq/delivery-contracts": "file:../../../../../../../.artifacts/npm/d3e601ba35459a8c6e88812a18f02846a3504582625179ba48d51760b45b82cb/hathq-delivery-contracts-0.10.0.tgz",
+    "@hathq/projection-client": "file:../../../../../../../.artifacts/npm/3a6031d48d73c683762f6a1618a7dae6ce905fba33b1658b90ef750bd64861c2/hathq-projection-client-0.10.0.tgz",
+    "@hathq/dom-renderer": "file:../../../../../../../.artifacts/npm/69bb0cdcd7dacb282be204d7594da01fc260dfadc1c64352d2217c13488a6a43/hathq-dom-renderer-0.10.0.tgz",
+    "@crowsi/transport-foundation": "file:../../../../../../../.artifacts/npm/1b5ec6b8afacdc64987d8d2c4bb88a9c42e3a88e928c05dce97480d0a24e83d6/crowsi-transport-foundation-0.10.0.tgz"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
